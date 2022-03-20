@@ -1,6 +1,6 @@
 package com.wangzhen.utils.storage;
 
-import androidx.annotation.Nullable;
+import org.jetbrains.annotations.Nullable;
 
 import java.lang.ref.Reference;
 import java.lang.ref.SoftReference;

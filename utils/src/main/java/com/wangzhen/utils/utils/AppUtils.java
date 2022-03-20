@@ -21,8 +21,7 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.view.inputmethod.InputMethodManager;
 
-import androidx.annotation.Nullable;
-import androidx.core.content.ContextCompat;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -134,14 +133,14 @@ public class AppUtils {
      * get color
      */
     public static int getColor(int resId) {
-        return ContextCompat.getColor(getContext(), resId);
+        return getContext().getResources().getColor(resId);
     }
 
     /**
      * get drawable
      */
     public static Drawable getDrawable(int resId) {
-        return ContextCompat.getDrawable(getContext(), resId);
+        return getContext().getResources().getDrawable(resId);
     }
 
     /**

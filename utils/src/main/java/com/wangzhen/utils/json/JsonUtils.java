@@ -1,9 +1,9 @@
 package com.wangzhen.utils.json;
 
-import androidx.annotation.NonNull;
-
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
+
+import org.jetbrains.annotations.NotNull;
 
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
@@ -44,12 +44,12 @@ public class JsonUtils {
     private static <T> ParameterizedType type(final Class<T> raw, final Type... args) {
         return new ParameterizedType() {
 
-            @NonNull
+            @NotNull
             public Type getRawType() {
                 return raw;
             }
 
-            @NonNull
+            @NotNull
             public Type[] getActualTypeArguments() {
                 return args;
             }

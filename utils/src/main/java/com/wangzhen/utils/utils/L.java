@@ -8,8 +8,8 @@ import android.util.Log;
  * Created by wangzhen on 2020/9/15.
  */
 public class L {
-    private static boolean DEBUG = AppUtils.isDebug();
-    private static String TAG;
+    private static final boolean DEBUG = AppUtils.isDebug();
+    private static final String TAG;
 
     static {
         String appName = AppUtils.getAppName();

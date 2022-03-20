@@ -1,6 +1,6 @@
 package com.wangzhen.utils.transfer;
 
-import androidx.annotation.Nullable;
+import org.jetbrains.annotations.Nullable;
 
 import java.lang.ref.Reference;
 import java.lang.ref.SoftReference;
@@ -13,7 +13,7 @@ import java.util.Map;
  */
 public class DataTransfer {
     private static DataTransfer mInstance;
-    private Map<String, SoftReference<?>> mCache = new HashMap<>();
+    private final Map<String, SoftReference<?>> mCache = new HashMap<>();
 
     public static DataTransfer get() {
         if (mInstance == null) {
